@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for i in data %}
+        {% if i.id == 1 %}
+            <h1><a href="pupil_1.html">{{ i.name }}</a></h1>
+            <img src="{{ i.image }}">
+            <span>{{ i.score }}</span>
+        {% elif i.mavzu_id == 2 %}
+            <h1><a href="pupil_2.html">{{ i.name }}</a></h1>
+            <img src="{{ i.image }}">
+            <span>{{ i.score }}</span>
+        {% else %}
+            <h1><a href="pupil_3.html">{{ i.name }}</a></h1>
+            <img src="{{ i.image }}">
+            <span>{{ i.score }}</span>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% for i in data %}
+        {% if i.mavzu_id == 1 %}
+            <a href="mavzu_1.html" , target="_blank">{{ i.name }}</a>
+        {% elif i.mavzu_id == 2 %}
+            <a href="mavzu_2.html" , target="_blank">{{ i.name }}</a>
+        {% else %}
+            <a href="mavzu_3.html" , target="_blank">{{ i.name }}</a>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
